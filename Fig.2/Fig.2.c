@@ -2,15 +2,14 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define N (1)
-#define NEQ (10) //number of equations
+#define N (1) // following the dynamics in one compartment
+#define NEQ (10) // number of reactions
 
 #define a (1.5) 
 #define g (0.025) 
 #define m (0.1) 
 #define d (0.5) 
 #define phi (100.0) 
-
 
 #define AA 471
 #define B 1586
@@ -45,14 +44,14 @@ double randd(void)		// random double between 0 and 1
     return((double) RandomInteger / RIMAX);
 }
 
-typedef struct _IND
+typedef struct _IND // structure of the compartments
 {
   int X, Y, P, R; // molecule types within the compartments
 }COMP;
 
 COMP comp[N];
 
-// filling up the compartments
+// filling the initial compartments with a random number of X, Y and R molecules
 void init()
 {
  int i;
@@ -64,7 +63,7 @@ void init()
    comp[i].P = 0;
    comp[i].R = randl(10)+1;
  }
-  
+
 }
 
 int kk;
@@ -170,6 +169,7 @@ int main(void)
   for(sim = 1; sim < 10000; sim++)
     Gillespie_step(0);
 
+  //slowly modifying b when a is constant in order to capture the hysteresis loop
   b = 0.0;
 
   for(numb = 0; numb < 120; numb++)
@@ -197,6 +197,5 @@ int main(void)
     printf("%lf\t%lf\t%lf\t%lf\t%lf\n", b, avex/num, avey/num, avep/num, aver/num);
     fflush(stdout);
   }
-
   return 0;
 }
