@@ -2,7 +2,7 @@ Repository for the software described in
 
 # Bistability of compartmentalized autocatalytic systems at the dawn of hereditary variation
 
-Alexa Iván<sup>1,2,4</sup>; András Szilágyi<sup>1,2</sup>; Eörs Szathmáry<sup>1,2,3</sup>
+Alexa Iván<sup>1,2,4</sup> ; András Szilágyi<sup>1,2</sup> ; Eörs Szathmáry<sup>1,2,3</sup>
  
 <sup>1</sup> Center for the Conceptual Foundations of Science, Parmenides Foundation, Pöcking, Germany   
 <sup>2</sup> Institute of Evolution, HUN-REN Centre for Ecological Research, Budapest, Hungary   
