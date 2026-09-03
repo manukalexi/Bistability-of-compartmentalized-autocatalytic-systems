@@ -42,37 +42,37 @@ make
 3. Run the compiled executable corresponding to the selected model:
 
 ```bash
-./Fig.2.c
+./Fig.2
 ```
 ```bash
-./Fig.S1.c
+./Fig.S1
 ```
 ```bash
-./Fig.S2.c
+./Fig.S2
 ```
 ```bash
-./Fig.S3S4.c
+./Fig.S3S4
 ```
 ```bash
-./Fig.S5.c
+./Fig.S5
 ```
 
 4. Save the program output to a file using output redirection (`>`):
 
 ```bash
-./Fig.2.c > output_filename.txt
+./Fig.2 > output_filename.txt
 ```
 ```bash
-./Fig.S1.c > output_filename.txt
+./Fig.S1 > output_filename.txt
 ```
 ```bash
-./Fig.S2.c > output_filename.txt
+./Fig.S2 > output_filename.txt
 ```
 ```bash
-./Fig.S3S4.c > output_filename.txt
+./Fig.S3S4 > output_filename.txt
 ```
 ```bash
-./Fig.S5.c > output_filename.txt
+./Fig.S5 > output_filename.txt
 ```
 5. Use the raw output files for further data evaluation and visualization.
 
