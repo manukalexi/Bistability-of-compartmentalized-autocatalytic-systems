@@ -9,7 +9,13 @@ Alexa Iván<sup>1,2,4</sup>; András Szilágyi<sup>1,2</sup>; Eörs Szathmáry<s
 <sup>3</sup> Department of Plant Systematics, Ecology and Theoretical Biology, ELTE Eötvös Loránd University, Budapest, Hungary   
 <sup>4</sup> Doctoral School of Biology, ELTE Eötvös Loránd University, Budapest, Hungary   
 
-## Repository Structure
+## Models
+
+The repository contains the models used to investigate alternative stable chemical states in interacting autocatalytic networks, both without and within compartments. The models describe two mutually interacting autocatalytic cycles, A and B, producing molecules X and Y, respectively, and their competition through cross-inhibition and environmental effects.
+
+The chemostat (CSTR) model describes the dynamics of the reaction network in a continuously supplied and diluted environment. The compartment-level selection model extends these dynamics to a population of reproducing compartments, where molecules are stochastically partitioned at division. This stochastic partitioning can generate compartments dominated by either X or Y, while differences in growth and reproduction allow selection to amplify compartments favored by the current environment.
+
+## Repository structure
 
 The repository is organized according to the figures associated with the computational analyses:
 
@@ -70,9 +76,9 @@ make
 
 6. For the Mathematica codes, open the corresponding files in Mathematica and evaluate the code directly; no compilation is required.
 
-## Parameters of the Model
+## Parameters of the models
 
-### General Parameters
+### General parameters
 
 - `a`: autocatalytic rate constant of cycle A
 - `b`: autocatalytic rate constant of cycle B
@@ -134,6 +140,10 @@ make
 - `b_1`, `b_2`: autocatalytic rate constants of the two steps of cycle B
 - `g_x`, `g_y`: reaction rate constants for the formation of inert complexes between molecules X and W, and Y and V, respectively
 - `h_x`, `h_y`: conversion rate constants of molecules X and Y into the inhibitory molecules V and W, respectively
+
+## Output
+
+Sample outputs for each model are placed in the respective directories.
 
 ## Disclaimer
 **The code provided in this repository is released for research purposes only and is provided without warranty or liability.**
