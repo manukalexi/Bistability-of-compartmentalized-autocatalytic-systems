@@ -143,9 +143,5 @@ make
 - `g_x`, `g_y`: reaction rate constants for the formation of inert complexes between molecules X and W, and Y and V, respectively
 - `h_x`, `h_y`: conversion rate constants of molecules X and Y into the inhibitory molecules V and W, respectively
 
-## Output
-
-Sample outputs for each model are placed in the respective directories.
-
 ## Disclaimer
 **The code provided in this repository is released for research purposes only and is provided without warranty or liability.**
