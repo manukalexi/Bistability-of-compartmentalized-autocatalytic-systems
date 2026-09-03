@@ -11,9 +11,11 @@ Alexa Iván<sup>1,2,4</sup>; András Szilágyi<sup>1,2</sup>; Eörs Szathmáry<s
 
 ## Models
 
-The repository contains the models used to investigate alternative stable chemical states in interacting autocatalytic networks, both without and within compartments. The models describe two mutually interacting autocatalytic cycles, A and B, producing molecules X and Y, respectively, and their competition through cross-inhibition and environmental effects.
+This repository contains the models used to investigate alternative stable chemical states in interacting autocatalytic networks, both without and within compartments. The models describe two mutually interacting autocatalytic cycles, A and B, producing molecules X and Y, respectively. Their coupled dynamics can give rise to bistability and hysteresis, with the resulting state depending on the initial conditions.
 
-The chemostat (CSTR) model describes the dynamics of the reaction network in a continuously supplied and diluted environment. The compartment-level selection model extends these dynamics to a population of reproducing compartments, where molecules are stochastically partitioned at division. This stochastic partitioning can generate compartments dominated by either X or Y, while differences in growth and reproduction allow selection to amplify compartments favored by the current environment.
+The chemostat (CSTR) model describes the reaction dynamics in a continuously supplied and diluted environment, while the compartment-level selection model implements the same dynamics within a population of reproducing compartments. Molecules are stochastically partitioned at division, generating variation in compartment composition. Environmental change is represented by two environments, `E_X` and `E_Y`, which favor compartments enriched in X or Y, respectively, through composition-dependent autocatalytic rates. This can drive regime shifts either through within-compartment dynamics or, when the system remains within the hysteresis region, through compartment-level selection acting on stochastically generated variants.
+
+The repository also includes extended reaction networks with explicitly represented inhibitory molecules, modified fragmentation rules, and longer autocatalytic cycles, under both reversible and irreversible reaction schemes and periodically changing environments.
 
 ## Repository structure
 
