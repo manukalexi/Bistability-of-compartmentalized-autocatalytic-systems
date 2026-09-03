@@ -45,6 +45,9 @@ make
 ./Fig.2
 ```
 ```bash
+./Fig.3
+```
+```bash
 ./Fig.S1
 ```
 ```bash
@@ -61,6 +64,9 @@ make
 
 ```bash
 ./Fig.2 > output_filename.txt
+```
+```bash
+./Fig.3 > output_filename.txt
 ```
 ```bash
 ./Fig.S1 > output_filename.txt
