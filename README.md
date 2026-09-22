@@ -11,11 +11,15 @@ Alexa Iván<sup>1,2,4</sup> ; András Szilágyi<sup>1,2</sup> ; Eörs Szathmáry
 
 ## Models
 
-This repository contains the models used to investigate alternative stable chemical states in interacting autocatalytic networks, both without and within compartments. The models describe two mutually interacting autocatalytic cycles, A and B, producing molecules X and Y, respectively. Their coupled dynamics can give rise to bistability and hysteresis, with the resulting state depending on the initial conditions.
+The models describe two interacting autocatalytic cycles, A and B, producing X and Y, respectively. The interaction between the two cycles can result in two alternative stable states. Depending on the initial conditions, the system can settle into either state.
 
-The chemostat (CSTR) model describes the reaction dynamics in a continuously supplied and diluted environment, while the compartment-level selection model implements the same dynamics within a population of reproducing compartments. Molecules are stochastically partitioned at division, generating variation in compartment composition. Environmental change is represented by two environments, `E_X` and `E_Y`, which favor compartments enriched in X or Y, respectively, through composition-dependent autocatalytic rates. This can drive regime shifts either through within-compartment dynamics or, when the system remains within the hysteresis region, through compartment-level selection acting on stochastically generated variants.
+The chemostat (CSTR) model describes these reaction dynamics in a continuously supplied and diluted environment, while the compartment-level model uses the same reaction dynamics within a population of reproducing compartments. When a compartment divides, its molecules are randomly distributed between the daughter compartments, creating variation in their composition.
 
-The repository also includes extended reaction networks with explicitly represented inhibitory molecules, modified fragmentation rules, and longer autocatalytic cycles, under both reversible and irreversible reaction schemes and periodically changing environments.
+Environmental change is represented by two environments, $E_X$ and $E_Y$. In $E_X$, the autocatalytic rates depend on the amount of X in a compartment, while in $E_Y$ they depend on the amount of Y. For example, in $E_X$, compartments containing more X have higher autocatalytic rates for both X and Y. They therefore grow faster and become more strongly represented in the next generation. In $E_Y$, the same process is driven by the amount of Y.
+
+These environmental changes can shift the system from one stable state to another, either through the reaction dynamics within compartments or through selection between compartments. At the population level, this can result in a regime shift, where an X-dominated state becomes Y-dominated, or vice versa.
+
+The repository also contains code for extended studies of the compartment-level model. These include models with explicitly represented inhibitory molecules, reversible and irreversible reactions, different compartment division rules, and longer autocatalytic cycles with additional reaction steps. The extended models are used to examine how changes in the reaction network and compartment dynamics affect the behaviour of the system.
 
 ## Repository structure
 
