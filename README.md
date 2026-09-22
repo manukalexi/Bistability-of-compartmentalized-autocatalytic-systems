@@ -11,9 +11,9 @@ Alexa Iván<sup>1,2,4</sup> ; András Szilágyi<sup>1,2</sup> ; Eörs Szathmáry
 
 ## Models
 
-The models describe two interacting autocatalytic cycles, A and B, producing X and Y, respectively. The interaction between the two cycles can result in two alternative stable states. Depending on the initial conditions, the system can settle into either state.
+This repository contains models of interacting autocatalytic reaction networks. The system consists of two autocatalytic cycles, A and B, producing X and Y, respectively. The two cycles interact, and a weak mutation term allows the system to exhibit bistability, with two alternative stable states: an X-dominated state and a Y-dominated state. 
 
-The chemostat (CSTR) model describes these reaction dynamics in a continuously supplied and diluted environment, while the compartment-level model uses the same reaction dynamics within a population of reproducing compartments. When a compartment divides, its molecules are randomly distributed between the daughter compartments, creating variation in their composition.
+We first study the reaction dynamics in a well-mixed chemostat (CSTR), where molecules are continuously supplied and removed from the system. We then consider the same reaction network in a population of reproducing compartments. In this setting, reactions take place separately within each compartment, and compartments divide when they reach a given size. The molecules are then randomly distributed between the daughter compartments, creating variation in their composition. This introduces selection between compartments and leads to dynamics that differ from those of the well-mixed system.
 
 Environmental change is represented by two environments, $E_X$ and $E_Y$. In $E_X$, the autocatalytic rates depend on the amount of X in a compartment, while in $E_Y$ they depend on the amount of Y. For example, in $E_X$, compartments containing more X have higher autocatalytic rates for both X and Y. They therefore grow faster and become more strongly represented in the next generation. In $E_Y$, the same process is driven by the amount of Y.
 
